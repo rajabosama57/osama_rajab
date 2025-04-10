@@ -13,22 +13,29 @@
   /* --primaryColor: #f31c63; */
 }
 
+.skill-icon {
+  width: 60px; /* حجم ثابت للأيقونات */
+  height: 60px;
+  transition: transform 0.3s ease;
+}
 
+.skill-icon:hover {
+  transform: scale(1.1);
+}
 
+@media (min-width: 768px) {
+  .skill-icon {
+    width: 80px; /* حجم أكبر قليلاً لشاشات الكمبيوتر */
+    height: 80px;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (min-width: 992px) {
+  .skill-icon {
+    width: 100px; /* حجم أكبر لشاشات الكمبيوتر الكبيرة */
+    height: 100px;
+  }
+}
 
 .text-info{
   color: var(--primaryColor) !important;
@@ -485,6 +492,7 @@ transform: translateY(-10);
 .hidedevbig{
   display: block;
 }
+
 @media (max-width: 650px) {
   .hidedevsmall{
    display: block;
